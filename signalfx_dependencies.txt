@@ -1,0 +1,4 @@
+flask
+signalfx
+requests
+curl
