@@ -26,6 +26,10 @@ signalfx_dependencies.txt contains the required libraries for the signalfx rest 
 6) Dockerfile
 Dockerfile is the base template to build the docker image for the signalfx rest endpoint.
 
+# SignalFx Service Rest End Point: Prerequisites
+1) Docker Engine/Daemon in running state
+2) GitBash editor on a windows machine (optional for linux environments)
+
 # SignalFx Service Rest End Point: Instructions
 1) On the windows machine, run the make file "./signalfx_build.sh"
    On the linux machine, change the following lines and then run the make file ./signalfx_build.sh. 
