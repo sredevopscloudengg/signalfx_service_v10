@@ -1,2 +1,0 @@
-# signalfx_service_v10
-signalfx_service_v10
