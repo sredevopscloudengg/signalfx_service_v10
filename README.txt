@@ -1,15 +1,6 @@
-# SignalFx Service Rest End Point: Requirements
-1) Correctly accept a POST request from our internal health service
-2) Correctly POST a new event to SignalFX (https://developers.signalfx.com/ingest_data_reference.html)
-3) Run as a Docker container
-4) We like tests, so should you
-  Your project will need to provide a build tool (Bash, Makefile, etc) to do the following:
-  docker: build the container
-  docker-run: build the container and run the service
-  docker-shell: build the container and run a shell inside it
-  docker-test: build the container and run any test suite you have
+# Description
+this project creates a docker container with a rest end point implemented in flask/python that accetps a dummy POST request and creates a new event in signalfx
  
-# SignalFx Service Rest End Point Project Files: Notes
 1) signalfx_build.sh
 signalfx_build.sh is the make file for this project. 
 It creates a docker image, container, starts the container and starts the signalfx service.
@@ -26,11 +17,13 @@ signalfx_dependencies.txt contains the required libraries for the signalfx rest 
 6) Dockerfile
 Dockerfile is the base template to build the docker image for the signalfx rest endpoint.
 
-# SignalFx Service Rest End Point: Prerequisites
+# Prerequisites
+# SignalFx Service Rest End Point
 1) Docker Engine/Daemon in running state
 2) GitBash editor on a windows machine (optional for linux environments)
 
-# SignalFx Service Rest End Point: Instructions
+# Instructions
+# SignalFx Service Rest End Point
 1) On the windows machine, run the make file "./signalfx_build.sh"
    On the linux machine, change the following lines and then run the make file ./signalfx_build.sh. 
    Comment the line below in the file "signalfx_build.sh"
